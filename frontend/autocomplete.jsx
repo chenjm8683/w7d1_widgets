@@ -33,14 +33,20 @@ var Autocomplete = React.createClass({
           type="text"
           value={this.state.inputString}
           onChange={this.handleChange}
-          />
+        />
 
         <ul>
-          { names.map(function(name) {
-            return (<li key={name} onClick={this.handleClick}>
-                {name}
-              </li>)
-          }.bind(this))}
+          {
+            names.map(function(name) {
+              return (
+                <li
+                  key={name}
+                  onClick={this.handleClick}>
+                  {name}
+                </li>
+              )
+            }.bind(this))
+          }
         </ul>
       </div>
     )

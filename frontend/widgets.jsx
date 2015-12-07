@@ -1,6 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var Autocomplete = require('./autocomplete.jsx')
+var Autocomplete = require('./autocomplete.jsx');
+var WeatherClock = require('./weather_clock.jsx');
 
 var Widgets = React.createClass({
   render: function () {
@@ -9,6 +10,7 @@ var Widgets = React.createClass({
         <Autocomplete
           names={["Colin", "Jacob", "Jeff", "Max", "Ned", "Gizmo"]}
           />
+        <WeatherClock />
       </div>
     );
   }
