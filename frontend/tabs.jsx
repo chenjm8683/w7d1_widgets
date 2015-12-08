@@ -14,7 +14,7 @@ var Tabs = React.createClass({
         <ul>
           {this.props.ar.map(function(ar, idx) {
             var isSelected = (idx === this.state.tabIndex)
-              return (
+            return (
                 <li
                   key={ar.title}
                   data-tab-id={idx}
@@ -25,7 +25,7 @@ var Tabs = React.createClass({
             }.bind(this))
           }
         </ul>
-        
+
         <p>
           {this.props.ar[this.state.tabIndex].content}
         </p>
